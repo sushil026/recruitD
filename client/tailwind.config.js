@@ -1,11 +1,76 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        pathway: ['Pathway', 'sans'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
+    },
+    colors: {
+      
+      dark_green: {
+        DEFAULT: "#123921",
+        100: "#040c07",
+        200: "#07170d",
+        300: "#0b2314",
+        400: "#0f2f1b",
+        500: "#123921",
+        600: "#277c48",
+        700: "#3cbe6e",
+        800: "#7bd59e",
+        900: "#bdeace",
+      },
+      forest_green: {
+        DEFAULT: "#319c29",
+        100: "#0a1f08",
+        200: "#143f11",
+        300: "#1e5e19",
+        400: "#287e21",
+        500: "#319c29",
+        600: "#44cb3a",
+        700: "#73d86c",
+        800: "#a2e59d",
+        900: "#d0f2ce",
+      },
+      emerald: {
+        DEFAULT: "#6bd476",
+        100: "#0e3212",
+        200: "#1d6424",
+        300: "#2b9536",
+        400: "#3bc649",
+        500: "#6bd476",
+        600: "#8add92",
+        700: "#a7e6ad",
+        800: "#c5eec9",
+        900: "#e2f7e4",
+      },
+      light_green: {
+        DEFAULT: "#8bde93",
+        100: "#103814",
+        200: "#207128",
+        300: "#30a93c",
+        400: "#53cf5f",
+        500: "#8bde93",
+        600: "#a3e5a9",
+        700: "#baebbf",
+        800: "#d1f2d4",
+        900: "#e8f8ea",
+      },
+      aquamarine: {
+        DEFAULT: "#87ddbe",
+        100: "#103829",
+        200: "#1f6f52",
+        300: "#2fa77b",
+        400: "#50cea0",
+        500: "#87ddbe",
+        600: "#a0e4cb",
+        700: "#b7ebd8",
+        800: "#cff2e5",
+        900: "#e7f8f2",
+      },
+    },
   },
   plugins: [],
-}
+};
